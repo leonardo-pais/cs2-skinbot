@@ -1,0 +1,26 @@
+name: Run CS2-SkinBot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # 15 minutes interval
+  workflow_dispatch:       # allows manual triggering of the workflow
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run bot
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          CSFLOAT_API_KEY: ${{ secrets.CSFLOAT_API_KEY }}
+        run: python main.py

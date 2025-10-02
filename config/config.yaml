@@ -1,0 +1,23 @@
+discord:
+  webhook_url: "${DISCORD_WEBHOOK}"
+
+sites:
+  - name: "CSFloat"
+    api_url: "https://csfloat.com/api/v1/listings"
+    api_key: "${CSFLOAT_API_KEY}"
+    query_params:
+      limit: 20   # max 50
+      sort_by: "most_recent"
+      min_float: 0.0009999
+      max_float: 0.002
+      category: 1   # 0: any, 1: normal, 2: stattrak, 3: souvenir
+      # max_price: 5000   # in USD
+      type: buy_now   # or auction
+
+wanted_skins:
+  - "AK-47 | B the Monster"
+  - "AK-47 | Vulcan"
+  - "Butterfly Knife | Fade"
+  - "M4A1-S | Vaporwave"
+  - "AK-47 | Inheritance"
+  - "Karambit | Fade"
