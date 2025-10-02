@@ -9,9 +9,7 @@ A lightweight bot that monitors **CS2 skin marketplaces** (CSFloat, DMarket(soon
 
 ---
 
-<p align="center">
-  <img src="media/skin.mp4" alt="Demo" width="400"/>
-</p>
+https://github.com/user-attachments/assets/7bd3c822-a251-4afe-bf8f-b8243663b29b
 
 ---
 
