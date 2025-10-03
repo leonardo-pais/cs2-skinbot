@@ -6,7 +6,7 @@ sites:
     api_url: "https://csfloat.com/api/v1/listings"
     api_key: "${CSFLOAT_API_KEY}"
     query_params:
-      limit: 20   # max 50
+      limit: 30   # max 50
       sort_by: "most_recent"
       min_float: 0.0009999
       max_float: 0.002
@@ -17,7 +17,12 @@ sites:
 wanted_skins:
   - "AK-47 | B the Monster"
   - "AK-47 | Vulcan"
+  - "AK-47 | Midnight Laminate"
+  - "AK-47 | Inheritance"
   - "Butterfly Knife | Fade"
   - "M4A1-S | Vaporwave"
-  - "AK-47 | Inheritance"
   - "Karambit | Fade"
+  - "AWP | CMYK"
+  - "AWP | Desert Hydra"
+  - "AWP | Oni Taiji"
+  - "USP-S | Kill Confirmed"
