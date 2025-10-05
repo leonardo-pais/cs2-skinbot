@@ -6,6 +6,9 @@ from typing import Any, Dict, Tuple
 import requests # pylint: disable=import-error
 
 
+######################## CSFloat API interaction ########################
+
+
 def fetch_csfloat_data(
         url: str,
         headers: Dict[Any, Any],
@@ -27,7 +30,6 @@ def fetch_csfloat_data(
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()  # Raise an error for bad responses
         data: Dict = response.json()
-        print(f'Data fetched: {data}')
 
     except requests.RequestException as e:
         print(f"Error fetching data from {url}: {e}")
