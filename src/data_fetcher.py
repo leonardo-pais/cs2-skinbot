@@ -27,6 +27,7 @@ def fetch_csfloat_data(
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()  # Raise an error for bad responses
         data: Dict = response.json()
+        print(f'Data fetched: {data}')
 
     except requests.RequestException as e:
         print(f"Error fetching data from {url}: {e}")
