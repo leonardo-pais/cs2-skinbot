@@ -7,6 +7,8 @@
 
 A lightweight bot that monitors **CS2 skin marketplaces** (CSFloat, DMarket(soon), Skinport(soon)) and sends **Discord notifications** when desired skins with specific float values are listed.
 
+<img width="488" height="172" alt="Capturar" src="https://github.com/user-attachments/assets/6c6d6d7b-0d6a-4a02-809e-b0596edc3eeb" />
+
 ---
 
 https://github.com/user-attachments/assets/7bd3c822-a251-4afe-bf8f-b8243663b29b
