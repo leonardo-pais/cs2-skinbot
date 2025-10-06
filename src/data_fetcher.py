@@ -48,19 +48,20 @@ def format_csfloat_data(
         csfloat_data (dict): The raw data fetched from the CSFloat API.
         wanted_skins (list): List of skins to filter the data.
     Returns:
-        dict: Formatted data containing only the wanted skins.
+        Tuple: Formatted data containing only the wanted skins.
         bool: Returns True if formatting was successful, False otherwise.
     '''
-    formatted_data: Dict[Any, Any] = {}
+    formatted_data: Tuple[Dict[Any, Any]] = []
     try:
-        for item in csfloat_data['data']:
+        for item in csfloat_data.get('data', []):
             if item['item']['item_name'] in wanted_skins:
-                formatted_data[item['item']['item_name']] = [
-                    item['item']['float_value'],
-                    item['price'],
-                    item['item']['inspect_link']
-                    ]
+                formatted_data.append({
+                    'name': item['item']['item_name'],
+                    'float': item['item']['float_value'],
+                    'price': f"{'$ ' + str(item['price'])[:-2] + '.' + str(item['price'])[-2:]}",
+                    'link': f'https://csfloat.com/item/{item['id']}'
+                })
     except Exception as e:
         print(f"Error formatting data: {e}")
-        return {}, False
+        return [], False
     return formatted_data, True

@@ -48,7 +48,7 @@ def main():
     # Send a message to Discord if there are any wanted skins found
     ok = send_discord_message(
         config['discord']['webhook_url'],
-        f"Found wanted skins: {formatted_data}"
+        formatted_data
     )
     if not ok:
         print("Failed to send message to Discord.")
