@@ -6,7 +6,7 @@ sites:
     api_url: "https://csfloat.com/api/v1/listings"
     api_key: "${CSFLOAT_API_KEY}"
     query_params:
-      limit: 30   # max 50
+      limit: 50   # max 50
       sort_by: "most_recent"
       min_float: 0.0009999
       max_float: 0.002
