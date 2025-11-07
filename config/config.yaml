@@ -9,7 +9,7 @@ sites:
       limit: 50   # max 50
       sort_by: "most_recent"
       min_float: 0.0009999
-      max_float: 0.002
+      max_float: 0.00109
       category: 1   # 0: any, 1: normal, 2: stattrak, 3: souvenir
       # max_price: 5000   # in USD
       type: buy_now   # or auction
@@ -20,12 +20,9 @@ wanted_skins:
   - "AK-47 | Midnight Laminate"
   - "AK-47 | Inheritance"
   - "AK-47 | The Oligarch"
-  - "M4A1-S | Vaporwave"
   - "M4A4 | Full Throttle"
   - "AWP | CMYK"
   - "AWP | Desert Hydra"
   - "AWP | Oni Taiji"
   - "AWP | Ice Coaled"
-  - "USP-S | Kill Confirmed"
-  - "★ Karambit | Fade"
   - "★ Butterfly Knife | Fade"
